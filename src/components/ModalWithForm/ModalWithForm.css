@@ -1,0 +1,118 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s;
+  z-index: 999;
+  overflow: auto;
+  margin-top: 80px;
+}
+
+.modal_open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__content {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 800px;
+  min-width: 500px;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 40px 20px;
+  height: 550px;
+}
+
+.modal__title {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.modal__label {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #333;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: transparent url("../../assets/closeX_btn.svg") no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.modal__button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.modal__save-button {
+  font-family: "Arial", sans-serif;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 500;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.modal__save-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.modal__secondary-button {
+  font-family: "Arial", sans-serif;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 500;
+  background-color: #ccc;
+  color: #333;
+}
+
+.modal__input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
+}
+
+select.modal__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

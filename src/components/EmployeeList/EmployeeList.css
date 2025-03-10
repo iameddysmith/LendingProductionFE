@@ -1,0 +1,70 @@
+.employee-list {
+  margin: 20px;
+}
+
+.employee-list h3 {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.employee-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.employee-list th,
+.employee-list td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.employee-list th {
+  background-color: #f5f5f5;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.employee-list td {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.employee-list button {
+  padding: 6px 12px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.employee-list button:last-child {
+  background-color: #f44336;
+  margin-right: 0;
+}
+
+.employee-list button:hover {
+  opacity: 0.9;
+}
+
+.employee-header {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #3d7dca;
+  font-weight: 700;
+}

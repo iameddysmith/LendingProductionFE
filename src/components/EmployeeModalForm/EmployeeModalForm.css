@@ -1,0 +1,87 @@
+.employee-modal-form {
+  width: 100%;
+}
+
+.employee-modal-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.employee-modal-form__field {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.department-row {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.department-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.department-select {
+  flex: 1;
+}
+
+.additional-fields {
+  display: flex;
+  gap: 10px;
+  flex: 2;
+}
+
+.additional-fields .modal__input {
+  flex: 1;
+}
+
+.employee-modal-form__label {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.employee-modal-form__input,
+.employee-modal-form__select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -moz-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+}
+
+.employee-modal-form__select {
+  appearance: none;
+}
+
+.employee-modal-form__input::placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+.employee-modal-form__input:-ms-input-placeholder {
+  color: #888;
+}
+
+.employee-modal-form__input::-ms-input-placeholder {
+  color: #888;
+}
+
+.employee-modal-form__input:focus,
+.employee-modal-form__select:focus {
+  border-color: #4caf50;
+  outline: none;
+}
